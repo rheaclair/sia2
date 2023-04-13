@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register -PNP ONLINE</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+        <link href="fv.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="header"><left>
+                <h2>New Applicant Registration</h2>
+                 <p style="color: blue;">Required fields are indicated with *</p>
+          
+                <p style="color: red;">Email Address should be VALID and ACTIVE</p>
+            </left>
+            </div>
+            <form class="form">
+                <div class="form-control">
+                    <lable for="email" name="email"></lable>
+                    <input id="txtEmail" type="email" name="email" placeholder="Email address*" >
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <p style="color: black;">Password need to be atleast 8 characters long</p>
+                    <lable for="pwd" name="pwd"></lable>
+                    <input id="txtPwd" type="password" name="pwd" placeholder="Password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <lable for="conpwd" name="conpwd"></lable>
+                    <input id="txtConPwd" type="password" name="conpwd" placeholder="Confirm password*">
+                    <small>Error Message</small>
+                </div>
+
+                <br></br>
+                 <div class="form-control">
+                    <lable for="fn" name="fn"></lable>
+                    <input id="txtFirstname" type="text" name="fn" placeholder="First name*">
+                    <small>Error Message</small>
+                </div>
+
+                 <div class="form-control">
+                    <lable for="middlename" name="middlename"></lable>
+                    <input id="middlename" type="text" name="middlename" placeholder="Middle name*">
+                </div>
+
+                 <div class="form-control">
+                    <lable for="surname" name="surname"></lable>
+                    <input id="surname" type="text" name="surname" placeholder="Surname*">
+                </div>
+
+                <div class="row">
+                    <label for="qualifier"></label>
+                    <select name="0" id="qualifier">
+                    <option value="-1">Qualifier*</option>
+                    <option value="1">SR</option>
+                    <option value="2">JR</option>
+                    <option value="3">JR II</option>
+                    <option value="4">III</option>></option>
+                    <option value="5">IV</option>
+                    <option value="6">V</option>
+                    <option value="7">VI</option>
+                    <option value="8">VII</option>
+                    <option value="8">VIII</option>
+                </select>
+
+                <div class="row">
+                    <label for="gender"></label>
+                    <select name="0" id="gender">
+                    <option value="-1">Gender*</option>
+                    <option value="1">MALE</option>
+                    <option value="2">FEMALE</option>
+                    
+                </select>
+
+                 <div class="form-control">
+                    <lable for="birth" name="birth"></lable>
+                    <input id="birth" type="date" name="birth" placeholder="Birthday*">
+                </div>
+
+                <div class="form-control">
+                    <button>Register</button>
+                </div>
+
+            </form>
+        </div>
+        <script src="fv.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(pnp.png);
+    background-size: 130%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding: 100px 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    margin:0;
+    font-size: 12px;  
+}
+
+.container{
+    width: 500px;
+    height: 860px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header{
+    background-color: whitesmoke;
+    padding: 10px 20px;
+}
+.form{
+    padding: 5px 5px;
+}
+
+.form-control{
+    margin-bottom:1px;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+.form-control lable {
+    display: inline-block;
+    margin-bottom:5px;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 1px;
+    border:2px solid #d8d1d1;
+}
+
+.form-control.success input{
+    border:2px solid rgb(26, 167, 26);
+}
+.form-control.error input{
+    border:2px solid rgb(255, 0, 0);
+}
+.form-control.success input{
+    border:2px solid rgb(26, 167, 26);
+}
+.form-control small{
+    position:absolute;
+    margin: 3px;
+    visibility: hidden;
+}
+button{
+    display: flex;
+    background-color: blue;
+    float: right;
+    color: white;
+    padding: 20px 20px;
+    height: 200%;
+    align-items: right;
+    border-radius:4px;
+    cursor: pointer;
+
+}
+
+select {
+    height: 6%;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 5px;
